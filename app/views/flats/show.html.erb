@@ -1,0 +1,13 @@
+<div class="card">
+  <h1><%= @flat.name %></h1>
+  <p>Address: <%= @flat.address %></p>
+</div>
+<div class="card">
+  <h2>A bit more about this flat</h2>
+  <p><%= @flat.description %></p>
+</div>
+<div class="card">
+  <h2>Details</h2>
+<p><i class="fas fa-user-friends"></i> <%= @flat.number_of_guests %>   <i class="fas fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+</div>
+<p><%= link_to "Back to all flats", flats_path %><p>
